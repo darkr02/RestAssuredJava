@@ -1,0 +1,58 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.funambulist.restassured</groupId>
+  <artifactId>RestAssuredJava</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  <properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <JacksonDataBindVersion>2.16.1</JacksonDataBindVersion>
+    <RestAssuredVersion>5.4.0</RestAssuredVersion>
+    <LombokVersion>1.18.30</LombokVersion>
+    <TestNGVersion>7.9.0</TestNGVersion>
+    <JavaFakerVersion>1.0.2</JavaFakerVersion>
+    <FilloVersion>1.21</FilloVersion>
+  </properties>	
+  
+  
+	<dependencies>
+		<dependency>
+	    <groupId>com.fasterxml.jackson.core</groupId>
+	    <artifactId>jackson-databind</artifactId>
+	    <version>${JacksonDataBindVersion}</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
+	<dependency>
+	    <groupId>org.projectlombok</groupId>
+	    <artifactId>lombok</artifactId>
+	    <version>${LombokVersion}</version>
+	    <scope>provided</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+	<dependency>
+	    <groupId>io.rest-assured</groupId>
+	    <artifactId>rest-assured</artifactId>
+	    <version>${RestAssuredVersion}</version>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>${TestNGVersion}</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+	<dependency>
+	    <groupId>com.github.javafaker</groupId>
+	    <artifactId>javafaker</artifactId>
+	    <version>${JavaFakerVersion}</version>
+	</dependency>
+	<dependency>
+	    <groupId>com.codoid.products</groupId>
+	    <artifactId>fillo</artifactId>
+	    <version>${FilloVersion}</version>
+	</dependency> 
+	</dependencies>
+</project>
